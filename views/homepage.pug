@@ -1,0 +1,19 @@
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Animals
+    a(href='/update-cobj') Add to this table
+    table
+      thead
+        tr
+          th Name
+          th Pet Type
+          th Owner Name
+      tbody
+        each animal in data
+          tr
+            td #{animal.properties.name}
+            td #{animal.properties.pet_type}
+            td #{animal.properties.owner_name}

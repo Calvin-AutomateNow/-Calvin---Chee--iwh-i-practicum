@@ -1,0 +1,26 @@
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Add a New Animal
+    a(href='/') Return to the homepage
+    br
+    br
+    form(action='/update-cobj', method='POST')
+      label Name
+      br
+      input(type='text', name='name')
+      br
+      br
+      label Pet Type
+      br
+      input(type='text', name='pet_type')
+      br
+      br
+      label Owner Name
+      br
+      input(type='text', name='owner_name')
+      br
+      br
+      button(type='submit') Submit
